@@ -30,7 +30,7 @@ function purchaseMedicine(){
 function upgradeWeapon() {
     weaponUpgrader += 1;
     killsPerClick += 1
-    dollarsPerClick = dollarsPerClick * killsPerClick;
+    dollarsPerClick += 10;
     dollars -= 500;
     document.querySelector('#dollars').innerText = `$ ${dollars}`
     document.querySelector('#weaponUpgrade').innerText = weaponUpgrader
